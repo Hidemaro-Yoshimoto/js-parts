@@ -1,0 +1,24 @@
+.accordion {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.question {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.answer {
+  width: 100%;
+  padding: 10px;
+  display: none;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-top: none;
+  margin: 0;
+}
