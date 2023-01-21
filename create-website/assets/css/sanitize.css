@@ -512,7 +512,7 @@
  [tabindex] {
    -ms-touch-action: manipulation; /* 1 */
    touch-action: manipulation; /* 2 */
- }
+ } 
  
  /**
   * Add the correct display in IE 10-.
