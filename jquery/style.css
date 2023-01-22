@@ -1,0 +1,15 @@
+.red {
+  color: red;
+}
+
+.underline {
+  text-decoration: underline solid blue;
+}
+
+.add-class {
+  color: green;
+}
+
+.wrapper {
+  margin: 100px 0;
+}
