@@ -8,6 +8,8 @@
 
 .add-class {
   color: green;
+  background-color: rgb(146, 175, 157);
+  border: none;
 }
 
 .wrapper {
