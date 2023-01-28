@@ -1,0 +1,17 @@
+.red {
+  color: red;
+}
+
+.underline {
+  text-decoration: underline solid blue;
+}
+
+.add-class {
+  color: green;
+  background-color: rgb(146, 175, 157);
+  border: none;
+}
+
+.wrapper {
+  margin: 100px 0;
+}
