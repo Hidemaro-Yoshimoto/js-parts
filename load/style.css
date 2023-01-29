@@ -39,7 +39,7 @@ body {
 }
 
 .loader span:nth-child(3) {
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 
 .content {
