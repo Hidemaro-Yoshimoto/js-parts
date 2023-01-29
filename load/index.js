@@ -1,6 +1,6 @@
 window.onload = () => {
   setTimeout(() => {
-    // loaderを消す。
+    // Loaderを消す。
     const loader = document.querySelector('.loader');
     loader.classList.add('loaded');
   
