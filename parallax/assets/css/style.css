@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("../image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 100px;
+  height: 400px;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+  font-size: 20px;
+}
+
+main h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+main section {
+  position: relative;
+  height: 500px;
+}
+
+main section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main section p {
+  line-height: 1.6;
+}
+
+main section:not(:first-of-type) {
+  margin-top: 15px;
+}
+
+main section .image {
+  position: absolute;
+  top: 0;
+  width: 35%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.35);
+}
+
+main section .image img {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+}
+
+main section .circle {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(144, 245, 154, 1),
+    rgba(3, 202, 255, 1)
+  );
+  transition: 0.3s;
+  /* transtionをかけるとスクロールしてから少し遅れて動く */
+}
+
+main section:nth-of-type(odd) .image {
+  right: 0;
+}
+
+main section:nth-of-type(odd) .circle {
+  left: -20px;
+}
+
+main section:nth-of-type(even) {
+  padding-left: 40%;
+}
+
+main section:nth-of-type(even) .image {
+  left: 0;
+}
+
+main section:nth-of-type(even) .circle {
+  right: -20px;
+}

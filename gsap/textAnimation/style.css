@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cursor {
+  position: fixed;
+  background-color: blue;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* margin で中心に。width, heightの半分をマイナス値で指定する */
+  margin: -7.5px 0 0 -7.5px;
+  user-select: none;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.circles {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #cacdcc;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  background-color: green;
+  width: 630px;
+  height: 630px;
+  /* margin で中心に。width, heightの半分をマイナス値で指定する */
+  margin: -315px 0 0 -315px;
+}
+
+.circle2 {
+  background-color: red;
+  width: 420px;
+  height: 420px;
+  z-index: 1;
+  /* margin で中心に。width, heightの半分をマイナス値で指定する */
+  margin: -200px 0 0 -200px;
+}
+
+.circle3 {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  /* margin で中心に。width, heightの半分をマイナス値で指定する */
+  margin: -100px 0 0 -100px;
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  mix-blend-mode: screen;
+  z-index: 4;
+}
+
+.content h1 {
+  font-size: 9rem;
+}
